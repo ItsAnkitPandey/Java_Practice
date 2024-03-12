@@ -1,19 +1,26 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SumOfIntegers {
     public static void main(String[] args) {
         // Create a Scanner object to read input
-             Scanner scanner = new Scanner(System.in);
-   
+        Scanner scanner = new Scanner(System.in); 
+
+        try {
             System.out.print("Enter integers separated by spaces (press Enter to finish): ");
-            int sum = readAndSumIntegers(scanner);
+            scanner.nextLine();
+            int sum = readAndSumIntegers();
+             
             System.out.println("Total sum: " + sum);
-       
+        } catch (InputMismatchException e) {
+            System.out.println("Error: Non-integer value detected. Please enter only integer values.");
+        } finally {
+            // Close the Scanner
             scanner.close();
         }
-    
+    }
 
-    public static int readAndSumIntegers(Scanner scanner) {
+    private static int readAndSumIntegers(Scanner scanner) {
         int sum = 0;
 
         while (scanner.hasNext()) {
@@ -28,4 +35,3 @@ public class SumOfIntegers {
         return sum;
     }
 }
-
