@@ -10,12 +10,7 @@ public class UniqueNumberChecker {
         // Get input from the user
         System.out.print("Enter an integer: ");
         int number;
-        try {
             number = scanner.nextInt();
-        } catch (java.util.InputMismatchException e) {
-            System.out.println("Invalid input. Please enter a valid integer.");
-            return;
-        }
 
         // Check if the number is unique
         if (isUniqueNumber(number)) {
