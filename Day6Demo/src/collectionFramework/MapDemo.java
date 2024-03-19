@@ -2,6 +2,7 @@ package collectionFramework;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.TreeMap;
 
 public class MapDemo {
 
@@ -23,6 +24,15 @@ public class MapDemo {
 		capitalsMap2.put("France", "Peris");
 		
 		System.out.println(capitalsMap2);
+		
+		TreeMap<Integer, String> products = new TreeMap<>();
+		products.put(01, "Apple");
+		products.put(05, "Samsung");
+		products.put(04, "BlackBerry");
+		products.put(03, "Xiomi");
+		products.put(02, "Oppo");
+		
+		System.out.println(products);
 
 	}
 

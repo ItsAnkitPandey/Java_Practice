@@ -3,7 +3,7 @@ package java8;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.function.Consumer;
+
 
 public class ListDemo {
 
@@ -26,7 +26,7 @@ public class ListDemo {
 			System.out.println(str);
 		}
 		
-		System.out.println("********Using Lambda **********");
+		System.out.println("********Using forEach **********");
 		
 		courses.forEach(c-> System.out.println(c));
 	}

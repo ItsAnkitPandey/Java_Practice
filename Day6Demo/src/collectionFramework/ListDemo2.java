@@ -32,6 +32,10 @@ public class ListDemo2 {
 			String str = (String) obj;
 			System.out.println(str);
 		}
+		
+		System.out.println("********Using forEach **********");
+		
+		courses.forEach(p-> System.out.println(p));
 	}
 
 }

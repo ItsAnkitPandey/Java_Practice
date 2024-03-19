@@ -7,7 +7,7 @@ import java.util.TreeSet;
 public class SetDemo {
 
 	public static void main(String[] args) {
-		HashSet<String> courses = new HashSet<>();
+		HashSet<String> courses = new HashSet<>();  
 		
 		courses.add("sql");
 		courses.add("html");
@@ -18,7 +18,7 @@ public class SetDemo {
 		
 		System.out.println(courses);
 		
-		LinkedHashSet<String> course = new LinkedHashSet<String>();
+		LinkedHashSet<String> course = new LinkedHashSet<String>();  //sorted in insertion order
 		course.add("sql");
 		course.add("html");
 		course.add("css");

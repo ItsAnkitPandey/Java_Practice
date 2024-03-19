@@ -1,14 +1,11 @@
-package collectionFramework;
+package java8;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.Iterator;
 
 import bean.Product;
 
-public class ProductListDemo {
-
-	
+public class WithoutStreamDemo {
 
 	public static void main(String[] args) {
 		Product p1 = new Product();
@@ -27,7 +24,7 @@ public class ProductListDemo {
 		p3.setPrice(59000);
 		
 		Product p4 = new Product();
-		p4.setProductId(2);
+		p4.setProductId(4);
 		p4.setName("SanDisk");
 		p4.setPrice(550);
 		
@@ -40,32 +37,25 @@ public class ProductListDemo {
 		
 		System.out.println("ProductsList:");
 		
+		products.forEach(p-> System.out.println(p.getProductId()+ " "+ p.getName()+ " "+ p.getPrice()));
+		
+		
+		//task filter products on mobile categary
+		
+		String name = "SanDsk";
+		
 		Iterator<Product> i = products.iterator();
 		
 		while(i.hasNext()) {
 			Product p = i.next();
-			System.out.println("ID: "+ p.getProductId() + " NAME: "+ p.getName() + " Price: " + p.getPrice());
-		}
-		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Product Name: ");
-		String inputName = sc.next();
-		boolean flag = false;
-		
-		Iterator<Product> i1 = products.iterator();
-		while(i1.hasNext()) {
-			Product p = i1.next();
-			if(p.getName().equalsIgnoreCase(inputName)) {
-				System.out.println(p.getProductId()+" "+p.getName()+" "+p.getPrice());
-				flag=true;
+			if(p.getName().equalsIgnoreCase(name)){
+				System.out.println(p.getProductId()+ " "+ p.getName()+ " "+ p.getPrice());
 			}
 			
 		}
-		if(flag==false) {
-			System.out.println("NO prouducts match");
-		}
 		
 		
+
 	}
 
 }
