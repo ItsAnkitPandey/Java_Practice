@@ -10,3 +10,5 @@ class StaicCalculate{
         System.out.println(result);
     }
 }
+
+// static keyword helps in calling methods directly using classname without creating any object of class
