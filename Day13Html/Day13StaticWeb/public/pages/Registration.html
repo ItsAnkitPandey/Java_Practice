@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<body>
+	<h1>Registration form</h1>
+	<form>
+		<div>
+			<label>first name</label> <input type="text" name="fname" />
+		</div>
+		<div>
+			<label>LastName</label> <input type="text" name="lname" />
+		</div>
+		<div>
+			<label>Gender</label> <input type="radio" name="gender" value="male" />
+			male <input type="radio" name="gender" value="female" /> female
+		</div>
+		<div>
+			<label>DOB</label> <input type="date" name="dob" />
+		</div>
+		<div>
+			<label>Email</label> <input type="email" name="email" />
+		</div>
+		<div>
+			<label>Select Country</label>
+			<select>
+			<option value="##">--Select--</option>
+				<option value="india">India</option>
+				<option value="usa">USA</option>
+				<option value="france">France</option>
+				<option value="russia">Russia</option>
+				<option value="britain">Britain</option>
+				<option value="china">China</option>
+				
+			</select>
+		</div>
+		<div>
+			<label>Languages</label>
+			<input type="checkbox" name="language" value="hindi">Hindi
+			<input type="checkbox" name="language" value="English">English
+			<input type="checkbox" name="language" value="Tamil">Tamil
+		</div>
+		<input type="submit" />
+	</form>
+</body>
+</html>
