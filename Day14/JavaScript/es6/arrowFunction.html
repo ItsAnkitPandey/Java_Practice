@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow funtion</title>
+  </head>
+  <body>
+    <h1>ARrow function</h1>
+    <script>
+      function add(a, b) {
+        let c = a + b;
+        return c;
+      }
+      var d = add(10, 20);
+      document.write(d);
+
+      var sum =   function add(a, b) {
+        let c = a + b;
+        return c;
+      }
+      var sumValue = sum(10,25);
+      document.write(sumValue);
+
+      //arrow function
+
+      var arrowSum = (a,b)=>{
+        let c = a+b;
+        document.write(c);
+      }
+
+    </script>
+  </body>
+</html>

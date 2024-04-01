@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread operator</title>
+</head>
+<body>
+    <script>
+        function add(a,...c) {
+            let sum = 0;
+            for (let i = 0; i < c.length; i++) {
+                 sum =sum + c[i];
+            }
+            return sum;
+        }
+        let r1 = add(10);
+        console.log(r1);
+
+        let r2 = add(10, 20);
+        console.log(r2);
+
+        let r3 = add(10, 20, 30);
+        console.log(r3);
+        
+        let r4 = add(10, 20, 30, 40);
+        console.log(r4);
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Demo</title>
+    <style>
+        /* name selector */
+        h1{
+            background-color: aqua;
+            color: red;
+            text-align: center;
+        }
+
+        /* class selector */
+        .h2{
+            background-color: black;
+            color: white;
+        }
+
+        /* id selector */
+        #h1{
+            background-color: orange;
+            color: white;
+            text-align: left;
+        }
+
+        /* child selector */
+        div > p{
+            background-color: yellow;
+            text-decoration: dotted;
+        }
+
+        /* name selector */
+        p{
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>I am heading 1</h1>
+    <h2 class="h2">I m heading 2</h1>
+    <h1 id="h1">i m heading 1</h1>
+    <p>heloo im paragraph</p>
+    <div>
+        <p>Helo i am para inside a div</p>
+    </div>
+</body>
+</html>

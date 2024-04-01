@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let and Const</title>
+</head>
+<body>
+    <h1>Let and Const</h1>
+    <script>
+        const a =10;
+        // a=21;  cant change value bcoz a is a constant variable
+
+        if(a%2==0){
+            let c = "even";
+            var d = "even";
+        }
+        // document.write("<br>"+c);  error bcoz let is a local scope variable
+        document.write("<br>"+d);  
+    </script>
+</body>
+</html>

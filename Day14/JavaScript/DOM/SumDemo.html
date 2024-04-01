@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function sum() {
+            let x = parseInt( document.getElementById("a").value);
+            let y = parseInt( document.getElementById("b").value);
+            let z = x+y;
+            alert("Sum is " +z);
+        }
+    </script>
+    <title>SUm demo DOM</title>
+</head>
+<body>
+    <div>
+        <label for="a">Input  number a</label>
+        <input type="text" name="a" id="a">
+    </div>
+    <div>
+        <label for="b">Input  number b</label>
+        <input type="text" name="b" id="b">
+    </div>
+    <button onclick="sum()">+</button>
+
+</body>
+</html>

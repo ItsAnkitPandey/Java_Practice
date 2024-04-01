@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo 4</title>
+    <script>
+      function sum() {
+        var elements = document.getElementsByClassName("myClass");
+        var x = parseInt(elements[0].value) +parseInt( elements[1].value);
+        alert(x);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <label for="a">Input number a</label>
+      <input type="text" name="a" class="myClass" />
+    </div>
+    <div>
+      <label for="b">Input number b</label>
+      <input type="text" name="b" class="myClass" />
+    </div>
+    <button onclick="sum()">+</button>
+  </body>
+</html>
