@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="emp1" class="com.abc.springcore.bean.Employee">
+		<property name="empId" value="101" />
+		<property name="name" value="Ankit" />
+		<property name="skills">
+			<set>
+				<value>SQL</value>
+				<value>Maven</value>
+				<value>Junit</value>
+			</set>
+		</property>
+		<property name="address" ref="add1" />
+	</bean>
+	<bean id="add1" class="com.abc.springcore.bean.Address">
+		<property name="addressId" value="81" />
+		<property name="doorNo" value="205" />
+		<property name="city" value="Gorakhpur" />
+		<property name="state" value="uttar pradesh" />
+	</bean>
+	<bean id="stu1" class="com.abc.springcore.bean.Student">
+		<property name="studentId" value="01" />
+		<property name="studentName" value="Ankit" />
+		<property name="age" value="22" />
+	</bean>
+</beans>

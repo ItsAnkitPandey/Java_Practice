@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+<bean id="emp1" class="com.abc.milestone3.bean.Employee">
+    <property name="empId" value="20" />
+    <property name="firstName" value="Ankit" />
+    <property name="skillRatings">
+        <map>
+            <entry key="Sql" value="6" />
+            <entry key="hibernate" value="7" />
+			<entry key="Core java" value="8" />
+			<entry key="html" value="7" />
+			<entry key="javascript" value="8" />
+        </map>
+    </property>
+</bean>
+
+</beans>
