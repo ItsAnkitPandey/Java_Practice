@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>${message})</h1>
+<h2 style="color:red">${message}</h2>
+<a href="loginform">Try Again?</a>
 </body>
 </html>

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	
+ <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>		
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,14 +9,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="login">
-	<div>
-		<label>username</label> <input type="text" name="uname" />
-	</div>
-	<div>
-		<label>username</label> <input type="password" name="pwd" />
-	</div>
-	<input type="submit" value="login" />
-	</form>
+	<form:form action="login" method="post" modelAttribute="loginform">
+		<table>
+                <tr>
+                    <td><form:label path="username">Username</form:label></td>
+                    <td><form:input path="username"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="password">Password</form:label></td>
+                    <td><form:input path="password"/></td>
+                </tr>                
+                <tr>
+                    <td><input type="submit" value="Login"/></td>
+                </tr>
+            </table>
+	</form:form>
 </body>
 </html>
